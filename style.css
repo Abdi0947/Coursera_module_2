@@ -1,0 +1,67 @@
+/* the CSS style */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
+section{
+    float:right;
+    border: 2px solid black;
+    padding: 5px;
+}
+.chicken,.bubby,.shushi{
+    border: 2px solid black;
+    margin:20px;
+    background-color: aquamarine;
+}
+p{
+    margin-top: 40px;
+    padding: 20px;
+}
+.section-1{
+    background-color: bisque;
+}
+.section-2{
+    background-color: rgb(127, 84, 28);
+}
+.section-3{
+    background-color: beige;
+}
+/* mockup illustration*/
+
+/* *******Laptop moe  and above******** */
+@media (min-width:992px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+    
+/* *******Tablet mode 768px and 991px******** */
+@media (min-width:  768px) and (max-width: 991px){
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+/* *******Mobile mode equal to or less than 767px******** */
+@media (max-width: 767px){
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      section{
+        float:right;
+        border: 2px solid black;
+        padding: 5px;
+        position: relative;
+    }
+}
